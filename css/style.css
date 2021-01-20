@@ -16,15 +16,15 @@
     bottom: 5%;
     transition: 1s;
     z-index: 1;
+    pointer-events: none;
 }
 
 .arrowicon {
     transition: 1s;
 }
 
-.arrowicon > i:hover {
-    color: #0080c1;
-    transition: 1s;
+.arrowicon:hover {
+    transform: rotate(20deg);
 }
  
 .navbar ul {
@@ -37,6 +37,19 @@
     list-style-type: none;
     position: relative;
     left: -40px;
+}
+
+.hover:hover ul {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+}
+
+.hover:hover ~ .arrowicon i {
+    color:aqua;
+    margin-left: 260px;
+    transform-origin: center;
+    transform: rotate(180deg);
 }
 
 .navbar {
@@ -66,10 +79,22 @@
     overflow-y: hidden; 
     padding-top: 20px;
     transition: all 1s ease;
+    border-right: 1px solid #474B4F;
 }
 
-.navbar:hover > div > i {
+.hover:hover {
+    height: 100%; 
+    width: 320px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #222629; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    padding-top: 20px;
     transition: all 1s ease;
+    border-right: 1px solid #474B4F;
 }
 
 .container {
@@ -163,6 +188,18 @@
     white-space: nowrap;
 }
 
+.hover:hover a {
+    margin-left: 25px;
+    font-size: 28px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #6b6e70;
+    display: block;
+    transition: 1s;
+    white-space: nowrap;
+}
+
 ul {
     width: 100px;
 }
@@ -183,6 +220,14 @@ ul {
     }
 
     .navbarex {
+        height: 100%;
+        transition: all 1s ease;
+        font-size: 24px;
+        width: 100%;
+        opacity: 0.95;
+    }
+
+    .hover:hover {
         height: 100%;
         transition: all 1s ease;
         font-size: 24px;
@@ -223,10 +268,24 @@ ul {
     }
 
     .arrowicon > i {
-        transform-origin: center center;
+        transform-origin: center;
         position: fixed;
         right: 5%;
         top: 30px 
+    }
+
+    .navbarex ~ .arrowicon i {
+        color:aqua;
+        margin-left: 0px;
+        transform-origin: center;
+        transform: rotate(180deg); 
+    }
+
+    .hover:hover ~ .arrowicon i {
+        color:aqua;
+        margin-left: 0px;
+        transform-origin: center;
+        transform: rotate(180deg); 
     }
 }
 
@@ -255,6 +314,11 @@ ul {
 }
 
 .navbarex a span {
+    padding-left: 35px;
+    font-family: Helvetica;
+}
+
+.hover:hover a span {
     padding-left: 35px;
     font-family: Helvetica;
 }

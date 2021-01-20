@@ -1,24 +1,19 @@
 var x = document.getElementById("navbar");
+if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) ) {
+    document.getElementById("navbar").classList.add('hover');
+}
 
 function togglenavbar() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-        if (x.className == "navbar") {
+        document.getElementById("navbar").classList.remove('hover');
+        if (x.className == "navbar" || x.className == "navbar hover") {
             document.getElementById("navbar").className = "navbarex";
-            document.getElementById("arrowicon").style.transform = "rotate(180deg)";
         }
-        else if (x.className == "navbarex") {
+        else if (x.className == "navbarex" || x.className == "navbarex hover") {
             document.getElementById("navbar").className = "navbar";
-            document.getElementById("arrowicon").style.transform = "rotate(0deg)";
         }
     }
-    else if (x.className == "navbar") {
-        document.getElementById("navbar").className = "navbarex";
-        document.getElementById("arrowicon").style.transform = "rotate(180deg)";
+    else {
+        document.getElementById("navbar").classList.add('hover');
     }
-    else if (x.className == "navbarex") {
-        document.getElementById("navbar").className = "navbar";
-        document.getElementById("arrowicon").style.transform = "rotate(0deg)";
-    }
-    
 }
-
