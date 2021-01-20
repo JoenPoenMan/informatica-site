@@ -46,7 +46,7 @@
 }
 
 .hover:hover ~ .arrowicon i {
-    color:aqua;
+    color:#0080c1;
     margin-left: 260px;
     transform-origin: center;
     transform: rotate(180deg);
@@ -275,14 +275,14 @@ ul {
     }
 
     .navbarex ~ .arrowicon i {
-        color:aqua;
+        color:#0080c1;
         margin-left: 0px;
         transform-origin: center;
         transform: rotate(180deg); 
     }
 
     .hover:hover ~ .arrowicon i {
-        color:aqua;
+        color: #0080c1;
         margin-left: 0px;
         transform-origin: center;
         transform: rotate(180deg); 

@@ -93,12 +93,17 @@ p a {
 
 footer {
     padding-left: 100px;
+    padding-bottom: 5px;
     background-color: #222629;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     color: rgb(99, 99, 99);
+}
+
+.namen:hover {
+    color: #0080c1;
 }
 
 @media only screen and (max-width: 100vh) {
@@ -124,4 +129,12 @@ footer {
     left: -30px;
     top: -2px;
     border-top: 3px solid rgba(99, 99, 99, 0.3);
+}
+
+.inhoud ol li:hover {
+    color: #0080c1;
+}
+
+.inhoud ol li:hover span {
+    color: #0080c1;
 }
