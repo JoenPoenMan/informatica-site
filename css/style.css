@@ -51,6 +51,7 @@
     overflow-y: hidden; 
     padding-top: 20px;
     transition: all 1s ease;
+    border-right: 1px solid #474B4F;
 }
 
 .navbarex {
@@ -273,17 +274,6 @@ ul {
     transition: 1s;
 }
 
-.dropdown-container {
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-    transform: rotateX(90deg);
-    transform-origin: top;
-    opacity: 0;
-    display: block;
-    width: 100%;
-    border: none;
-}
-
 .dropdown-btn:hover > div {
     height: 1000px;
     transition: 1s;
@@ -292,4 +282,26 @@ ul {
 .main {
     margin-left: 160px; 
     padding: 0px 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+body {
+    width: vw;
+    overflow-x: hidden;
 }

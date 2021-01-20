@@ -16,6 +16,7 @@ article {
     font-family: Helvetica;
     color: white;
     margin-top: 40px;
+    margin-bottom: 150px;
 }
 
 a {
@@ -45,7 +46,11 @@ h2 {
 }
 
 p {
-    font-size: 22px ;
+    font-size: 22px;
+}
+
+p a {
+    text-decoration: underline;
 }
 
 .inhoud {
@@ -86,8 +91,37 @@ p {
     opacity: 1;
 }
 
+footer {
+    padding-left: 100px;
+    background-color: #222629;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: rgb(99, 99, 99);
+}
+
 @media only screen and (max-width: 100vh) {
     article {
         margin-left: 5px;
     }
+
+    footer {
+        padding-left: 10px;
+    }
+}
+
+.inhoud ol li:nth-child(4) {
+    position: relative;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+.inhoud ol li:nth-child(4)::after {
+    content: '';
+    width: calc(100% + 20px);
+    height: 2px;
+    position: absolute;
+    left: -30px;
+    top: -2px;
+    border-top: 3px solid rgba(99, 99, 99, 0.3);
 }
