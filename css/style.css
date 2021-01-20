@@ -52,6 +52,13 @@
     transform: rotate(180deg);
 }
 
+.navbarex ~ .arrowicon i {
+    color:#0080c1;
+    margin-left: 260px;
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
 .navbar {
     height: 100%; 
     width: 80px; 
