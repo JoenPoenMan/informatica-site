@@ -59,6 +59,10 @@
     transform: rotate(180deg);
 }
 
+nav ul li span:hover {
+    color:#0080c1;
+}
+
 .navbar {
     height: 100%; 
     width: 80px; 
