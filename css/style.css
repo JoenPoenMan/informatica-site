@@ -126,19 +126,19 @@ nav ul li span:hover {
 
 .container > div > a > img {
     padding-top: 1vh;
-    width: 25vw;
+    width: 18vw;
     object-fit: fill;
 }
 
 .container > div {
     background-color: #222629;
     padding: 7px;
-    height: 40vw;
+    height: 35vw;
     float: left;
     margin-right: 2vw;
     text-align: center;
     position: relative;
-
+    margin-bottom: 5px;
 }
 
 .container_ons {
@@ -172,7 +172,7 @@ nav ul li span:hover {
     margin-right: 2vw;
     text-align: center;
     position: relative;
-
+    height: 32vw;
 }
 
 .navbar a {
