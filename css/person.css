@@ -138,3 +138,7 @@ footer {
 .inhoud ol li:hover span {
     color: #0080c1;
 }
+
+.subfooter {
+    font-size: 15px;
+}
